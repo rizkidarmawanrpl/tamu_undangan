@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tamu_undangan/login.dart';
+import 'package:tamu_undangan/appbar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Tamu Undangan',
       theme: ThemeData(),
-      home: const Login(),
+      home: const Appbar(),
     );
   }
 }
