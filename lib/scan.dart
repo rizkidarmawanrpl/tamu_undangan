@@ -63,7 +63,7 @@ class Scan extends StatelessWidget {
                         Expanded(
                           child: SizedBox(
                             width: w * (30/100),
-                            child: ElevatedButton(
+                            child: TextButton(
                               onPressed: () {}, 
                               child: const Text('CLEAR'),
                             ),
@@ -71,8 +71,22 @@ class Scan extends StatelessWidget {
                         ),
                       ],
                     ),
+                    const Text(
+                      '*Bagi tamu yang tidak membawa qrcode atau sebagai tamu undangan group, silahkan entrikan nama tamu secara manual.',
+                      style: TextStyle(fontStyle: FontStyle.italic),
+                    ),
                   ],
                 ),
+              ),
+            ],
+          ),
+          ExpansionTile(
+            title: const Text('TAMU UNDANGAN YANG HADIR'),
+            children: [
+              Container(
+                color: Colors.white,
+                padding: const EdgeInsets.only(right: 10, bottom: 15, left: 10),
+                child: const Text('OK'),
               ),
             ],
           ),
